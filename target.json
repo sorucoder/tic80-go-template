@@ -1,0 +1,29 @@
+{
+  "llvm-target": "wasm32--wasi",
+  "build-tags": [ "tinygo.wasm" ],
+  "goos": "js",
+  "goarch": "wasm",
+  "linker": "wasm-ld",
+  "libc": "wasi-libc",
+  "cflags": [
+    "--target=wasm32--wasi",
+    "--sysroot={root}/lib/wasi-libc/sysroot",
+    "-Oz"
+  ],
+  "ldflags": [
+	"--allow-undefined",
+	"--no-demangle",
+	"--export=TIC",
+	"--export-table",
+	"--global-base=98304",
+	"--import-memory",
+	"--initial-memory=262144",
+	"--max-memory=262144",
+	"--no-entry",
+	"--stack-first",
+	"-z stack-size=65536",
+	"--strip-all"
+  ],
+  "emulator": "w4 run",
+  "wasm-abi": "js"
+}
