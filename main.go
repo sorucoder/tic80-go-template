@@ -33,6 +33,6 @@ func TIC() {
 
 	tic80.Cls(13)
 	tic80.Spr(1+t%60/30*2, x, y, tic80.NewSpriteOptions().AddTransparentColor(14).SetScale(3).SetSize(2, 2))
-	tic80.Print("HELLO WORLD FROM GO!", 40, 84, nil)
+	tic80.Print("HELLO WORLD FROM GO!", 65, 84, nil)
 	t++
 }
