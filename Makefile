@@ -30,7 +30,6 @@ endif
 endif
 
 cartridge:
-	rm -rf game.tic
 	$(TIC80) --cli --fs . --cmd 'load cart.wasmp & import binary out.wasm & save game.tic & exit'
 
 run:
