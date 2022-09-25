@@ -1,3 +1,3 @@
-module tic80-go
+module github.com/sorucoder/tic80-go
 
-go 1.18
+go 1.19
