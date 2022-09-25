@@ -1,7 +1,9 @@
 package main
 
-import "tic80-go/tic80"
-import _ "unsafe"
+import (
+	"tic80-go/tic80"
+	_ "unsafe"
+)
 
 var (
 	t int = 0
@@ -9,16 +11,13 @@ var (
 	y int = 24
 )
 
-//go:linkname start _start
-func start()
-
 //go:export BOOT
-func boot() {
-	start()
+func BOOT() {
+	tic80.Start()
 }
 
 //go:export TIC
-func main() {
+func TIC() {
 	if tic80.Btn(0) {
 		y--
 	}
