@@ -1,8 +1,9 @@
 package main
 
 import (
-	"tic80-go/tic80"
 	_ "unsafe"
+
+	"github.com/sorucoder/tic80-go/tic80"
 )
 
 var (
