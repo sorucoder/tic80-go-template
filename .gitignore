@@ -1,4 +1,4 @@
 .vscode
 .local
-cart.wasm
+out.wasm
 game.tic
