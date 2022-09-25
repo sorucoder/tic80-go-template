@@ -1,12 +1,21 @@
 package main
 
 import "tic80-go/tic80"
+import _ "unsafe"
 
 var (
 	t int = 0
 	x int = 96
 	y int = 24
 )
+
+//go:linkname start _start
+func start()
+
+//go:export BOOT
+func boot() {
+	start()
+}
 
 //go:export TIC
 func main() {
