@@ -1,6 +1,6 @@
-# tic80-go
+# tic80-go-template
 
-This is an unofficial WASM binding for Go to make TIC-80 Cartridges.
+This is an unofficial WASM binding template for Go to make TIC-80 Cartridges.
 
 ## Usage
 
