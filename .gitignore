@@ -1,4 +1,5 @@
 .vscode
 .local
+go.sum
 out.wasm
 game.tic

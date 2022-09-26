@@ -3,7 +3,7 @@ package main
 import (
 	_ "unsafe"
 
-	"github.com/sorucoder/tic80-go/tic80"
+	"github.com/sorucoder/tic80"
 )
 
 var (
