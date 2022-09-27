@@ -17,16 +17,16 @@ func BOOT() {
 
 //go:export TIC
 func TIC() {
-	if tic80.Btn(0) {
+	if tic80.Btn(tic80.BUTTON_UP) {
 		y--
 	}
-	if tic80.Btn(1) {
+	if tic80.Btn(tic80.BUTTON_DOWN) {
 		y++
 	}
-	if tic80.Btn(2) {
+	if tic80.Btn(tic80.BUTTON_LEFT) {
 		x--
 	}
-	if tic80.Btn(3) {
+	if tic80.Btn(tic80.BUTTON_RIGHT) {
 		x++
 	}
 

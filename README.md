@@ -2,6 +2,10 @@
 
 This is an unofficial WASM binding template for Go to make TIC-80 Cartridges.
 
+## Requirements
+
+As with WASM4, `go` and `tinygo` are required to build cartridges. Also, it goes without saying that `make` and an instance of TIC-80 is also required.
+
 ## General Usage
 
 The included `tic80` package follows the native [TIC-80 API](https://github.com/nesbox/TIC-80/wiki/API) as closely as possible, including optional arguments.
