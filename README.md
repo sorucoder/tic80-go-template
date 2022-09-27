@@ -2,7 +2,7 @@
 
 This is an unofficial WASM binding template for Go to make TIC-80 Cartridges.
 
-## Usage
+## General Usage
 
 The included `tic80` package follows the native [TIC-80 API](https://github.com/nesbox/TIC-80/wiki/API) as closely as possible, including optional arguments.
 For functions that have optional arguments, you can either use the defaults by passing `nil`, like so:
@@ -11,11 +11,13 @@ For functions that have optional arguments, you can either use the defaults by p
 tic80.Print("HELLO WORLD FROM GO!", 65, 84, nil)
 ```
 
-Or, you can pass an instance of the corresponding `tic80.`**`<APIName>`**`Options`, chaining its methods to configure it, like so:
+Or, you can pass an instance of the corresponding `tic80.<APIName>Options`, chaining its methods to configure it, like so:
 
 ```go
 tic80.Spr(1+t%60/30*2, x, y, tic80.NewSpriteOptions().AddTransparentColor(14).SetScale(3).SetSize(2, 2))
 ```
+
+Although, it is recommended to avoid creating an option object on the fly as shown above, as it will tax the garbage collector.
 
 ## Building
 

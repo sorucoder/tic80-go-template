@@ -1,8 +1,6 @@
 package main
 
 import (
-	_ "unsafe"
-
 	"github.com/sorucoder/tic80"
 )
 
